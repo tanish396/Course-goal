@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import CourseGoal from "./components/CourseGoal";
+import Heading from "./components/Heading";
+import "./App.css";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="appContainer">
+      <h1> TIME TO PRACTICE</h1>
+      <p id="paragraph">One course, many goals!🎯 </p>
+      <CourseGoal title="LEARN REACT" description="IN DEPTH" />
+      <CourseGoal
+        title="PRACTICE"
+        description="PRACTICE WORKING WITH REACT COMPONENTS"
+      />
     </div>
   );
 }
