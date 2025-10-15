@@ -1,4 +1,4 @@
-body {
+/* body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,4 +42,36 @@ h1 {
 }
 .title {
   color: #767676;
+} */
+
+.card {
+  border: 1px solid #cccccc46;
+  padding: 16px;
+  margin: 16px;
+}
+
+.appContainer {
+  background-color: rgb(30, 49, 30);
+  height: 350px;
+  width: 700px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.name-card {
+  color: white;
+  font-size: 40px;
+  padding-top: 70px;
+  padding-left: 20px;
+}
+#card-body {
+  color: #bbbbbb;
+  font-size: 30px;
+  padding: 18px;
+}
+#card-footer {
+  color: #8b7676;
+  font-size: 20px;
+  padding: 18px;
+  text-decoration: none;
 }
