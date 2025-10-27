@@ -1,3 +1,68 @@
+body {
+  background-color: rgb(176, 126, 126);
+  color: rgb(31, 29, 29);
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border-color: black;
+}
+
+.btn {
+  background-color: #915f5f;
+  color: rgb(0, 0, 0);
+  border: 1px solid #888;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  border-color: black;
+}
+
+.delete-btn:hover {
+  background-color: #211a1a;
+}
+
+.warning-box {
+  background-color: #7b666b;
+  border: 2px solid #b24b6f;
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+  border-radius: 8px;
+}
+
+.warning-box h2 {
+  margin-top: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.warning-box p {
+  font-size: 18px;
+  color: #f2f2f2;
+}
+
+.proceed-btn {
+  background-color: #4c001b;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.proceed-btn:hover {
+  background-color: #70002b;
+}
 /* body {
   display: flex;
   justify-content: center;
@@ -43,7 +108,7 @@ h1 {
 .title {
   color: #767676;
 } */
-
+/* 
 .card {
   border: 1px solid #cccccc46;
   padding: 16px;
@@ -74,4 +139,4 @@ h1 {
   font-size: 20px;
   padding: 18px;
   text-decoration: none;
-}
+} */
