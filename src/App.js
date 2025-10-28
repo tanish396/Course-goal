@@ -1,38 +1,72 @@
-import React, { useState } from "react";
 import "./App.css";
+import Todo from "./components/Todo";
+
 function App() {
-  const [showWarning, setShowWarning] = useState(false);
-
-  function showWarningHandler() {
-    setShowWarning(true);
-  }
-
-  function hideWarningHandler() {
-    setShowWarning(false);
-  }
-
+  const DUMMY_TODO = ["Learn React", "Practice React", "Profit!"];
   return (
-    <div className="container">
-      {!showWarning ? (
-        <button className="btn" onClick={showWarningHandler}>
-          {" "}
-          Delete{" "}
-        </button>
-      ) : (
-        <div id="alert" className="warning-box">
-          <h1> Are you sure? </h1>
-          <p> These changes can't be reverted </p>
-
-          <button className="proceed-btn" onClick={hideWarningHandler}>
-            Proceed
-          </button>
-        </div>
-      )}
+    <div className="list">
+      {DUMMY_TODO.map((item, index) => (
+        <Todo key={index} text={item} />
+      ))}
     </div>
   );
 }
-
 export default App;
+
+// import { useState } from "react";
+// function App() {
+//   const [isVisible, setIsVisible] = useState(false);
+
+//   function toggleMessageHandler() {
+//     setIsVisible(!isVisible);
+//   }
+//   return (
+//     <div>
+//       <h1>Toggle Message</h1>
+//       <button onClick={toggleMessageHandler}>
+//         {isVisible ? "Hide Message" : "Show Message"}
+//       </button>
+//       {isVisible && <p>This is a secret message</p>}
+//     </div>
+//   );
+// }
+// export default App;
+
+// import React, { useState } from "react";
+
+// function App() {
+//   const [showWarning, setShowWarning] = useState(false);
+
+//   function showWarningHandler() {
+//     setShowWarning(true);
+//   }
+
+//   function hideWarningHandler() {
+//     setShowWarning(false);
+//   }
+
+//   return (
+//     <div className="container">
+//       {!showWarning ? (
+//         <button className="btn" onClick={showWarningHandler}>
+//           {" "}
+//           Delete{" "}
+//         </button>
+//       ) : (
+//         <div id="alert" className="warning-box">
+//           <h1> Are you sure? </h1>
+//           <p> These changes can't be reverted </p>
+
+//           <button className="proceed-btn" onClick={hideWarningHandler}>
+//             Proceed
+//           </button>
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
+
+// export default App;
 
 // function Product() {
 //   const isAvailable = true;
