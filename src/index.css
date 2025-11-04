@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: rgb(8, 7, 7) !important ;
+  background-color: rgb(225, 177, 177) !important ;
   display: flex;
   justify-content: center;
   align-items: center;

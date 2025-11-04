@@ -1,17 +1,29 @@
-import "./App.css";
-import Todo from "./components/Todo";
+import React, { useEffect, useState } from "react";
+import Page from "../../course-goal/src/components/Gallery";
 
 function App() {
-  const DUMMY_TODO = ["Learn React", "Practice React", "Profit!"];
   return (
-    <div className="list">
-      {DUMMY_TODO.map((item, index) => (
-        <Todo key={index} text={item} />
-      ))}
+    <div>
+      <Page />
+      <Page />
     </div>
   );
 }
 export default App;
+
+// import Todo from "./components/Todo";
+
+// function App() {
+//   const DUMMY_TODO = ["Learn React", "Practice React", "Profit!"];
+//   return (
+//     <div className="list">
+//       {DUMMY_TODO.map((item, index) => (
+//         <Todo key={index} text={item} />
+//       ))}
+//     </div>
+//   );
+// }
+// export default App;
 
 // import { useState } from "react";
 // function App() {
